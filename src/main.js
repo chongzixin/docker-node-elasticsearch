@@ -2,6 +2,7 @@ const elastic = require("./elastic");
 const data =    require("./data");
                 require("dotenv").config();
 
+// self executing main function
 (async function main() {
     const isElasticReady = await elastic.checkConnection();
     if (isElasticReady) {
