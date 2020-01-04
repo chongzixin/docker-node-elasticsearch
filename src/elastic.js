@@ -36,7 +36,7 @@ async function setQuotesMapping() {
             }
         })
 
-        console.log("Qutoes mapping created successfully");
+        console.log("Quotes mapping created successfully");
     } catch (err) {
         console.error("An error occurred while setting the quotes mapping:");
         console.error(err);
