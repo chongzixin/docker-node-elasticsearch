@@ -1,4 +1,5 @@
 const elastic = require("./elastic");
+const server = require("./server");
 const data =    require("./data");
                 require("dotenv").config();
 
@@ -13,5 +14,7 @@ const data =    require("./data");
             await elastic.setQuotesMapping();
             await data.populateDatabase();
         }
+
+        server.start();
     }
 })();
